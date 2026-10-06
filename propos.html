@@ -14,8 +14,26 @@
 <body data-component="Scrolly">
     <div class="cursor" data-component="Cursor"></div>
 
+    <div class="transition" data-component="Transition">
+        <div class="transition-row row-1">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+        <div class="transition-row row-2">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+    </div>
 
-    <header class="header">
+
+
+    <header class="header" data-component="Header" data-always-show>
         <div class="wrapper">
             <a href="index.html" class="logo">YR</a>
             <nav class="nav">
@@ -31,6 +49,11 @@
                     </a>
                 </ul>
             </nav>
+            <button class="header__toggle js-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
         <hr class="hr_secondary">
     </header>
@@ -55,6 +78,23 @@
     <img class="swipeimage" alt="">
     <div id="smooth-wrapper" data-component="Scroller" data-pin-items="true">
         <div id="smooth-content">
+
+
+
+            <!-- 
+        mettre background sur texte en hover oranges
+        /// Enlever le sroller end sur fiche projets
+        Tags dans 02 préparation du visuel
+        ///  02 changer les boutons de carousell et autoplay maybe
+        /// changer opacité du grid 
+        bordure bas sur photo a propos
+        Sur vidéo de vélo et auto le son en fade in
+        sur mobile rajouter padding sur hero
+        à propos, sur grandeur lapotop mettre photo a droite et texte en bas
+        descendre gtr
+        préparation visuel pixelisé
+
+        -->
 
             <!-- À propos -->
 
@@ -339,64 +379,7 @@
 
             <hr class="hr_secondary" />
 
-            <!-- <section class="gallery">
-    <div class="wrapper">
-        <h2>En dehors du développement</h2>
-        <div class="gallerie1">
-            <div class="card">
-                <div class="media">
-                    <img src="assets/img/velo.jpg" alt="Vélo de montagne" />
-                </div>
-                <div class="content">
-                    <p class="mini">Moi en vélo de montagne</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="media">
-                    <img src="assets/img/ski.jpg" alt="Ski alpin" />
-                </div>
-                <div class="content">
-                    <p class="mini">Moi en ski à Chamonix, France</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="media">
-                    <img src="assets/img/gtr.jpg" alt="Nissan GTR" />
-                </div>
-                <div class="content">
-                    <p class="mini">Ma voiture de rève que j’ai vu à Bromont</p>
-                </div>
-            </div>
-        </div>
-        <div class="gallerie1 gallerie2">
-            <div class="card">
-                <div class="media">
-                    <img src="assets/img/airsoft.jpg" alt="Airsoft" />
-                </div>
-                <div class="content">
-                    <p class="mini">Moi et mes amis en Airsoft</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="media">
-                    <img src="assets/img/gaming.jpg" alt="Jeux vidéo" />
-                </div>
-                <div class="content">
-                    <p class="mini">Une soirée mémorable avec mon meilleur ami</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="media">
-                    <img src="assets/img/4x4.jpg" alt="Sortie 4x4" />
-                </div>
-                <div class="content">
-                    <p class="mini">Sortie de 4x4 à la Montagne Noire</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
-            <section class="gallery">
+            <section class="propos_gallery">
                 <div class="wrapper">
                     <h2>En dehors du développement</h2>
                     <div class="gallerie1">
